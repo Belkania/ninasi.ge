@@ -84,7 +84,7 @@ export default function Contact() {
                     >
                         <div className="rounded-2xl overflow-hidden shadow-lg border border-beige/50 h-[350px] md:h-[480px]">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11863.88!2d42.0833!3d42.3167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405f5e5e5e5e5e5d%3A0x5e5e5e5e5e5e5e5e!2sTsalenjikha%2C%20Georgia!5e0!3m2!1sen!2sge!4v1700000000000!5m2!1sen!2sge"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d300!2d42.070614009566754!3d42.609897571221154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1700000000000!5m2!1sen!2sge"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
