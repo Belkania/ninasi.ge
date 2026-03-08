@@ -41,7 +41,7 @@ export default function Hero() {
 
                 {/* Heart accent */}
                 <div className="animate-heart-beat inline-block mb-3 md:mb-4">
-                    <span className="text-2xl md:text-3xl">❤️</span>
+                    <span className="text-2xl md:text-3xl">🤎</span>
                 </div>
 
                 {/* Subtitle */}
