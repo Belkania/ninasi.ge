@@ -46,7 +46,7 @@ export default function Header() {
                         <img
                             src="/logo.png"
                             alt="Ninasi – Made with Love"
-                            className="h-16 md:h-20 lg:h-24 w-auto object-contain transition-transform group-hover:scale-105"
+                            className="h-20 md:h-24 lg:h-32 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-sm"
                             onError={(e) => {
                                 e.currentTarget.style.display = 'none';
                                 const fallback = e.currentTarget.parentElement?.querySelector('.logo-fallback');

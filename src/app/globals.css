@@ -50,16 +50,16 @@
 
 @layer components {
   .section-padding {
-    @apply px-5 py-16 md:px-12 md:py-20 lg:px-24 lg:py-28;
+    @apply px-4 py-12 md:px-12 md:py-20 lg:px-24 lg:py-28;
   }
 
   .section-title {
     font-family: 'Playfair Display', serif;
-    @apply text-2xl md:text-4xl lg:text-5xl font-bold text-brown-dark mb-4;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-brown-dark mb-4 md:mb-6;
   }
 
   .section-subtitle {
-    @apply text-warm-gray text-base md:text-xl max-w-2xl;
+    @apply text-brown-light text-lg md:text-xl max-w-2xl leading-relaxed;
   }
 
   .btn-primary {
