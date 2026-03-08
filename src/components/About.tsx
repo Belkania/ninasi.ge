@@ -21,24 +21,22 @@ export default function About() {
                         ref={imageRef}
                         className={`relative scroll-reveal-left ${imageVisible ? "visible" : ""}`}
                     >
-                        <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-beige to-cream-dark overflow-hidden shadow-lg relative">
-                            {/* Decorative overlay with animations */}
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="text-center">
-                                    <div className="text-7xl md:text-8xl mb-4 animate-coffee-pour inline-block">☕</div>
-                                    <div className="text-5xl md:text-6xl animate-heart-beat inline-block">💛</div>
-                                </div>
-                            </div>
+                        <div className="aspect-[4/5] rounded-3xl bg-beige overflow-hidden shadow-lg relative group">
+                            <img
+                                src="/about-image.jpg"
+                                alt="Ninasi Cafe"
+                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            />
                             {/* Floating sparkles */}
-                            <span className="absolute top-6 right-6 text-xl animate-sparkle">✨</span>
-                            <span className="absolute bottom-12 left-6 text-lg animate-sparkle" style={{ animationDelay: "1s" }}>✨</span>
+                            <span className="absolute top-6 right-6 text-xl animate-sparkle drop-shadow-md">✨</span>
+                            <span className="absolute bottom-24 left-6 text-lg animate-sparkle drop-shadow-md" style={{ animationDelay: "1s" }}>✨</span>
                             {/* Pattern accents */}
-                            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-caramel/10 to-transparent" />
+                            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brown-dark/30 to-transparent pointer-events-none" />
                         </div>
                         {/* Floating badge */}
-                        <div className="absolute -bottom-3 -right-2 md:bottom-8 md:-right-6 bg-white rounded-2xl shadow-lg p-3 md:p-4 flex items-center gap-2 md:gap-3 animate-float">
-                            <span className="text-2xl md:text-3xl animate-heart-beat inline-block">🫶</span>
-                            <span className="font-serif text-brown-dark font-semibold text-xs md:text-sm">Made with Love</span>
+                        <div className="absolute -bottom-4 -right-2 md:-bottom-2 md:-right-6 bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-3 md:p-4 flex items-center gap-2 md:gap-3 animate-float border border-beige/50">
+                            <span className="text-2xl md:text-3xl animate-heart-beat inline-block">🤎</span>
+                            <span className="font-serif text-brown-dark font-semibold text-sm md:text-base">Made with Love</span>
                         </div>
                     </div>
 
