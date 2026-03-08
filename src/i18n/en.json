@@ -1,0 +1,73 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "menu": "Menu",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    },
+    "hero": {
+        "slogan": "Ninasi – Made with Love",
+        "subtitle": "A cozy little coffee corner in Tsalenjikha, where every cup is made with love.",
+        "viewMenu": "View Menu",
+        "visitUs": "Visit Us"
+    },
+    "about": {
+        "title": "About Us",
+        "p1": "Ninasi is a small, cozy coffee corner in Tsalenjikha, created by a young local woman with a deep passion for coffee and sweets.",
+        "p2": "Come enjoy a pleasant atmosphere where you can savor high-quality coffee, delicious desserts, and great vibes.",
+        "p3": "Every single cup is prepared with love and special care."
+    },
+    "menu": {
+        "title": "Menu",
+        "coffee": "Coffee",
+        "smoothies": "Smoothies & Shakes",
+        "desserts": "Desserts",
+        "snacks": "Snacks",
+        "drinks": "Soft Drinks",
+        "note": "Our menu is not limited — even more options are available in the shop!",
+        "items": {
+            "americano": "Americano",
+            "espresso": "Espresso",
+            "doppio": "Doppio",
+            "cappuccino": "Cappuccino",
+            "candyCappuccino": "Candy Cappuccino",
+            "latte": "Latte",
+            "coldLatte": "Cold Latte",
+            "coldLatteChoco": "Cold Latte with Cream & Chocolate",
+            "coldAmericano": "Cold Americano",
+            "coldAmericanoIceCream": "Cold Americano with Ice Cream",
+            "coldChocolate": "Cold Chocolate",
+            "caramelMacchiato": "Caramel Macchiato",
+            "turkishCoffee": "Turkish Coffee",
+            "tea": "Tea",
+            "berrySmoothie": "Berry Smoothie",
+            "bananaSmoothie": "Banana Smoothie",
+            "strawberryShake": "Strawberry Shake",
+            "blueberryMuffin": "Blueberry Muffin",
+            "chocolateMuffin": "Chocolate Muffin",
+            "tiramisu": "Tiramisu",
+            "frenchFries": "French Fries",
+            "croquettes": "Croquettes",
+            "cheeseToast": "Cheese Toast",
+            "cocaCola": "Coca-Cola",
+            "fanta": "Fanta",
+            "sprite": "Sprite"
+        }
+    },
+    "gallery": {
+        "title": "Gallery"
+    },
+    "contact": {
+        "title": "Contact",
+        "address": "Tsalenjikha, Salia Street, Georgia",
+        "phone": "Phone",
+        "hours": "Opening Hours",
+        "hoursValue": "Every day 09:00 – 22:00",
+        "whatsapp": "Chat on WhatsApp"
+    },
+    "footer": {
+        "followUs": "Follow Us",
+        "rights": "All rights reserved"
+    }
+}

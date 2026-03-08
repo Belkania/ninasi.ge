@@ -1,0 +1,87 @@
+"use client";
+
+import { useI18n } from "@/i18n/i18n";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
+export default function About() {
+    const { t } = useI18n();
+    const { ref: sectionRef, isVisible } = useScrollAnimation();
+    const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation({ threshold: 0.1 });
+    const { ref: textRef, isVisible: textVisible } = useScrollAnimation({ threshold: 0.1 });
+
+    return (
+        <section id="about" className="section-padding bg-warm-white relative overflow-hidden">
+            {/* Decorative blob */}
+            <div className="absolute -top-20 -right-20 w-80 h-80 bg-pink-light/20 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="max-w-6xl mx-auto relative z-10" ref={sectionRef}>
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+                    {/* Image / Visual side */}
+                    <div
+                        ref={imageRef}
+                        className={`relative scroll-reveal-left ${imageVisible ? "visible" : ""}`}
+                    >
+                        <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-beige to-cream-dark overflow-hidden shadow-lg relative">
+                            {/* Decorative overlay with animations */}
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="text-7xl md:text-8xl mb-4 animate-coffee-pour inline-block">☕</div>
+                                    <div className="text-5xl md:text-6xl animate-heart-beat inline-block">💛</div>
+                                </div>
+                            </div>
+                            {/* Floating sparkles */}
+                            <span className="absolute top-6 right-6 text-xl animate-sparkle">✨</span>
+                            <span className="absolute bottom-12 left-6 text-lg animate-sparkle" style={{ animationDelay: "1s" }}>✨</span>
+                            {/* Pattern accents */}
+                            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-caramel/10 to-transparent" />
+                        </div>
+                        {/* Floating badge */}
+                        <div className="absolute -bottom-3 -right-2 md:bottom-8 md:-right-6 bg-white rounded-2xl shadow-lg p-3 md:p-4 flex items-center gap-2 md:gap-3 animate-float">
+                            <span className="text-2xl md:text-3xl animate-heart-beat inline-block">🫶</span>
+                            <span className="font-serif text-brown-dark font-semibold text-xs md:text-sm">Made with Love</span>
+                        </div>
+                    </div>
+
+                    {/* Text side */}
+                    <div
+                        ref={textRef}
+                        className={`scroll-reveal-right ${textVisible ? "visible" : ""}`}
+                    >
+                        <span className="inline-block text-caramel font-semibold text-xs md:text-sm uppercase tracking-widest mb-3">
+                            ─── {t.about.title}
+                        </span>
+                        <h2 className="section-title mb-4 md:mb-6">{t.about.title}</h2>
+
+                        <div className="space-y-4 md:space-y-5">
+                            <p className="text-base md:text-lg text-brown-light leading-relaxed">
+                                {t.about.p1}
+                            </p>
+                            <p className="text-base md:text-lg text-brown-light leading-relaxed">
+                                {t.about.p2}
+                            </p>
+                            <p className="text-base md:text-lg text-caramel-dark font-medium italic font-serif">
+                                &ldquo;{t.about.p3}&rdquo;
+                            </p>
+                        </div>
+
+                        {/* Stats */}
+                        <div className="grid grid-cols-3 gap-4 md:gap-6 mt-8 md:mt-10 pt-6 md:pt-8 border-t border-beige">
+                            <div className="text-center">
+                                <div className="text-xl md:text-3xl font-bold text-caramel font-serif">14+</div>
+                                <div className="text-sm text-warm-gray mt-1 animate-wiggle inline-block">☕</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-xl md:text-3xl font-bold text-caramel font-serif">6+</div>
+                                <div className="text-sm text-warm-gray mt-1 animate-wiggle inline-block" style={{ animationDelay: "0.5s" }}>🍰</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-xl md:text-3xl font-bold text-caramel font-serif">100%</div>
+                                <div className="text-sm text-warm-gray mt-1 animate-heart-beat inline-block">❤️</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
