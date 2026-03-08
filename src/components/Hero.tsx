@@ -59,12 +59,6 @@ export default function Hero() {
                     </a>
                 </div>
 
-                {/* Scroll indicator */}
-                <div className="mt-12 md:mt-0 md:absolute md:bottom-8 md:left-1/2 md:-translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
-                    <div className="w-6 h-10 border-2 border-brown-light/40 rounded-full flex items-start justify-center p-1.5">
-                        <div className="w-1.5 h-3 bg-caramel rounded-full animate-bounce" />
-                    </div>
-                </div>
             </div>
         </section>
     );
